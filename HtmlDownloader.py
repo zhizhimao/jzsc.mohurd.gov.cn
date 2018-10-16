@@ -68,7 +68,7 @@ html = debug.get_html(url)
 
 # 企业业绩
 url = 'http://jzsc.mohurd.gov.cn/dataservice/query/comp/compPerformanceListSys/001607220057270586'
-html = debug.get_html(url,pg=1)
+html = debug.get_html(url,pg=2)
 
 # 项目详细信息
 url = 'http://jzsc.mohurd.gov.cn/dataservice/query/project/projectDetail/4403071705099904'
