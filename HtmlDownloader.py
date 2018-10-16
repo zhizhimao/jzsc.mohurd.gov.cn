@@ -54,21 +54,23 @@ class HtmlDownloader(object):
 
 '''
 debug = HtmlDownloader()
-html = debug.get_html(qy_name='中国市政工程西南设计研究总院有限公司', pg=1, region='510000')
+name='中恒工程设计院有限公司'
+html = debug.get_html(qy_name=name, region='510000')
+html = debug.get_html(region='510000',apt_code='A1A')
 
 # 企业资质
-url = 'http://jzsc.mohurd.gov.cn/dataservice/query/comp/caDetailList/001607220057383548'
-html = debug.get_html(url,pg=1)
+url = 'http://jzsc.mohurd.gov.cn/dataservice/query/comp/caDetailList/001607220057270586'
+html = debug.get_html(url)
 
 # 注册人员
-url = 'http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057383548'
-html = debug.get_html(url,pg=1)
+url = 'http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057270586'
+html = debug.get_html(url)
 
 # 企业业绩
-url = 'http://jzsc.mohurd.gov.cn/dataservice/query/comp/compPerformanceListSys/001607220057383548'
+url = 'http://jzsc.mohurd.gov.cn/dataservice/query/comp/compPerformanceListSys/001607220057270586'
 html = debug.get_html(url,pg=1)
 
 # 项目详细信息
-url = 'http://jzsc.mohurd.gov.cn/dataservice/query/project/projectDetail/3205841709190201'
+url = 'http://jzsc.mohurd.gov.cn/dataservice/query/project/projectDetail/4403071705099904'
 html = debug.get_html(url)
 '''
